@@ -333,11 +333,89 @@ h1{
     .mission-holder{
         flex-direction: column;
     }
+    .greet-text{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    .greet-desc{
+        font-size: 16px;
+        line-height: 125%;
+        margin: 15px 0 25px;
+    }
+    .button{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .head-text{
+        padding: 30px 0 10px;
+    }
+    .head-text h2{
+        font-size: 24px;
+    }
+    .mission span{
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .mission-card p{
+        font-size: 16px;
+        max-width: 250px;
+    }
+    .mission-card{
+        height: 250px;
+    }
+    .mission-card img{
+        width: 25px;
+    }
+    .accordion{
+        padding-bottom: 10px !important;
+    }
+    .accordion summary{
+        font-size: 20px !important;
+        padding: 20px 0 20px 0 !important;
+    }
+    .accordion ul li{
+        font-size: 16px !important;
+    }
+    .accordion ul{
+        margin-left: 0 !important;
+    }
+    .advantage-card p{
+        font-size: 16px;
+    }
+    .advantage-card{
+        width: 173px;
+        height: 180px;
+        padding: 10px;
+    }
+    .advantage-card img{
+        width: 24px;
+    }
+    .meet-text{
+        font-size: 24px;
+    }
+    .meet-bs{
+        font-size: 16px;
+    }
+    .meet{
+        padding: 35px 0 35px;
+    }
+    .footer-content-logo span{
+        font-size: 16px;
+    }
+    .footer-content-logo{
+        padding-bottom: 20px;
+    }
+    .footer-content{
+        padding: 30px 0;
+    }
 }
 @media (max-width: 880px) {
     .advantage span{
         width: 100%;
         padding: 0 15px;
+        font-size: 20px;
         text-align: center;
     }
     .footer{
