@@ -47,7 +47,9 @@ nav ul{
     cursor: pointer;
 }
 nav div{
-    width: 90px;
+    width: 90px;    
+    opacity: 0;             /* invisible, still occupies space */
+    pointer-events: none;
 }
 .logo{
     width: 90px;
@@ -225,6 +227,7 @@ h1{
 }
 .meet-text{
     display: flex;
+    flex-wrap: wrap;
     font-family: 'rs';
     justify-content: center;
     font-size: 48px;
@@ -232,11 +235,12 @@ h1{
     margin-bottom: 15px;
 }
 .meet-text p{
-    text-align: center;
+    /* text-align: center; */
     font-family: 'rs';
 }
 .meet-text span{
     color: #2196a1;
+    font-family: 'rs';
 }
 .footer{
     background-color: #02292c;
@@ -289,10 +293,79 @@ h1{
     gap: 10px;
     font-size: 16px;
 }
+.mob{
+    display: none;
+}
 /* .footer-content-logo img{
     width: 1550px;
 } */
-
+@media (max-width: 1330px) {
+    nav ul{
+        display: none !important;
+    }
+    nav div{
+        width: max-content;
+        opacity: 1;
+        pointer-events: visible;
+    }
+    .mob{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .header-main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .header-main img{
+        width: 100%;
+        height: 340px;
+    }
+    .greet{
+        max-width: 600px;
+        margin: 0 auto;
+        height: 90vh;
+    }
+}
+@media (max-width: 730px) {
+    .mission-holder{
+        flex-direction: column;
+    }
+}
+@media (max-width: 880px) {
+    .advantage span{
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .footer{
+        padding: 0 15px;
+    }
+    .foot-logo img{
+        width: 82px;
+    }
+    .foot-logo{
+        font-size: 24px;
+    }
+    .foot-logo-txt{
+        margin-bottom: 15px;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-contact-item{
+        width: max-content;
+        justify-content: start;
+    }
+    .footer-contact h3{
+        width: 100%;
+    }
+    .footer-contact{
+        flex-wrap: wrap;
+    }
+}   
 
 
 
